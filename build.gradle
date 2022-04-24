@@ -1,0 +1,31 @@
+plugins {
+    id 'war'
+    id "io.freefair.lombok" version "6.4.2"
+}
+
+group 'com.quesito'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //struts
+    implementation 'org.apache.struts:struts2-core:2.5.30'
+    implementation 'org.apache.struts:struts2-convention-plugin:2.5.30'
+    implementation 'org.apache.struts:struts2-cdi-plugin:2.5.30'
+    //cdi
+    implementation 'org.jboss.weld.servlet:weld-servlet-shaded:3.1.6.Final'
+    //servlet
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+    implementation 'javax.enterprise:cdi-api:2.0.SP1'
+    //connection pool
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'org.springframework:spring-jdbc:5.3.19'
+    implementation 'mysql:mysql-connector-java:8.0.28'
+
+
+}
+
+
